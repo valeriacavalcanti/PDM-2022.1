@@ -11,7 +11,7 @@ class Calendario {
 
     fun diaDaSemana(): String{
         val dias = arrayListOf("DOMINGO", "SEGUNDA", "TERÇA", "QUARTA", "QUINTA", "SEXTA", "SÁBADO")
-        val dia = this.data.get(Calendar.DAY_OF_WEEK_IN_MONTH)
-        return dias[dia]
+        val dia = this.data.get(Calendar.DAY_OF_WEEK)
+        return dias[dia - 1]
     }
 }
